@@ -1,21 +1,26 @@
 * {
-    border: 1px solid red;
     box-sizing: border-box;
+    border: 1px solid red ;
 }
 :root {
     --main-font-size: 16px;
+    --main-logo-color: rgb(248, 133, 1);
+    --main-logo-width: 13px;
+    --main-logo-border-radius: calc(var(--main-logo-width)/2);
 }
 body {
     display: flex;
     flex-direction: row;
-    background-image: url(/Images/jjjy0hoobbn71.jpg);
+    background-image: url(/Images/models.png);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 body > div {
     width: 50vw;
     height: 100vh;
 }
-.container {
-    backdrop-filter: blur(7px);
+.form.container {
+    backdrop-filter: blur(15px);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -32,4 +37,46 @@ form {
 form > div {
     display: flex;
     flex-direction: column;
+}
+.logo-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.logo {
+    position: relative;
+    height: 120px;
+    width: 80px;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+    padding: 10px;
+}
+.left-side {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    padding: 50px;
+}
+.tall {
+    width: var(--main-logo-width);
+    height: 100px;
+    background-color: var(--main-logo-color);
+    border-radius: var(--main-logo-border-radius);
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+.short {
+    height: 80%;
+    width: var(--main-logo-width);
+    border-radius: var(--main-logo-border-radius);
+    background-color: var(--main-logo-color);
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+.wallace > p {
+    font-size: 30px;
+    color: var(--main-logo-color);
+    font-family: 'Inter', sans-serif;   
+    letter-spacing: 5px;
+    font-weight: bold;
+    text-shadow: 2px 4px 3px rgba(0,0,0,0.3);
 }
