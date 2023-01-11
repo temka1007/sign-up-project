@@ -1,0 +1,35 @@
+* {
+    border: 1px solid red;
+    box-sizing: border-box;
+}
+:root {
+    --main-font-size: 16px;
+}
+body {
+    display: flex;
+    flex-direction: row;
+    background-image: url(/Images/jjjy0hoobbn71.jpg);
+}
+body > div {
+    width: 50vw;
+    height: 100vh;
+}
+.container {
+    backdrop-filter: blur(7px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+form {
+    position: relative;
+    height: 70vh;
+    width: 60vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+form > div {
+    display: flex;
+    flex-direction: column;
+}
