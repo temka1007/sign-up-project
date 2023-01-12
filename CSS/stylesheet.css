@@ -1,12 +1,12 @@
 * {
     box-sizing: border-box;
-    border: 1px solid red ;
 }
 :root {
     --main-font-size: 16px;
-    --main-logo-color: rgb(248, 133, 1);
+    --main-logo-color: rgb(206, 124, 48);
     --main-logo-width: 13px;
     --main-logo-border-radius: calc(var(--main-logo-width)/2);
+    --main-font-color: #868a75;
 }
 body {
     display: flex;
@@ -23,20 +23,32 @@ body > div {
     backdrop-filter: blur(15px);
     display: flex;
     justify-content: center;
-    align-items: center;
-    flex-direction: column;
+    
 }
 form {
     position: relative;
-    height: 70vh;
-    width: 60vh;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-between; 
+    
+}
+.border {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 550px;
+
 }
 form > div {
     display: flex;
     flex-direction: column;
+
+}
+form > div > label+input {
+    display: flex;
+    width: 550px;
+
 }
 .logo-container {
     display: flex;
@@ -63,14 +75,14 @@ form > div {
     height: 100px;
     background-color: var(--main-logo-color);
     border-radius: var(--main-logo-border-radius);
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+    box-shadow: rgba(9, 9, 15, 0.5) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
 }
 .short {
     height: 80%;
     width: var(--main-logo-width);
     border-radius: var(--main-logo-border-radius);
     background-color: var(--main-logo-color);
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+    box-shadow: rgba(18, 18, 34, 0.5) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
 }
 .wallace > p {
     font-size: 30px;
@@ -79,4 +91,25 @@ form > div {
     letter-spacing: 5px;
     font-weight: bold;
     text-shadow: 2px 4px 3px rgba(0,0,0,0.3);
+}
+.warning-container {
+    border: 1px solid gray;
+    border-left: 4px solid rgb(175, 149, 0);
+    padding: 15px;
+    border-radius: 5px;
+    background-color: rgba(24, 24, 24, 0.5);
+    font-size: 20px;
+    font-family: 'VT323', monospace;
+    line-height: 17px;
+    display: flex;
+
+}
+.warning {
+    color: var(--main-font-color);
+}
+.material-symbols-outlined {
+    margin-right: 15px;
+    color: rgb(175, 149, 0);
+    display: flex;
+    align-self: center;
 }

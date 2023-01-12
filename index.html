@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="./CSS/stylesheet.css">
     <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Inter:wght@500&family=Rubik+Bubbles&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Inter:wght@500&family=Montserrat:wght@100;200&family=Rubik+Bubbles&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
     <title>WALLACE/Sign Up</title>
 </head>
 <body>
@@ -24,35 +26,39 @@
         </div>
     </div>
     <div class="form container">
-        <div>
-            <p>This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams. <br> Sign up now to get started.</p>
-        </div>
-        <div class="sign-up">
-            <h1>Create Account</h1>
-        </div>
-        <form action="get">
-            <div>
-                <label for="user_name">Your Name</label>
-                <input type="text" name="user_name" id="user_name" required>
+        <div class="border"> 
+            <div class="warning-container">
+                <span class="material-symbols-outlined">warning</span>
+                <p class="warning">This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams. <br> Sign up now to get started.</p>
             </div>
-            <div>
-                <label for="user_email">Email</label>
-                <input type="email" name="user_email" id="user_email">
+            <div class="sign-up">
+                <h1>Create Account</h1>
             </div>
-            <div>
-                <label for="password">Password</label>
-                <input type="password" name="password" id="password">
+            <form action="get">
+                <div>
+                    <label for="user_name">Your Name</label>
+                    <input type="text" name="user_name" id="user_name" required>
+                </div>
+                <div>
+                    <label for="user_email">Email</label>
+                    <input type="email" name="user_email" id="user_email">
+                </div>
+                <div>
+                    <label for="password">Password</label>
+                    <input type="password" name="password" id="password">
+                </div>
+                <div>
+                    <label for="confirmation_password">Confirm Password</label>
+                    <input type="password" name="confirm-password" id="confirmation_password">
+                </div>
+                <div>
+                    <button type="submit">Sign Up</button>
+                </div>
+            </form>
+            <p class="log-in">Already have an account?<a href="">Log in</a></p>
+            <div class="copyright">
+                <div>Copyright @ The Odin Project 2023</div>
             </div>
-            <div>
-                <label for="confirmation_password">Confirm Password</label>
-                <input type="password" name="confirm-password" id="confirmation_password">
-            </div>
-            <div>
-                <button type="submit">Sign Up</button>
-            </div>
-        </form>
-        <div class="copyright">
-            <div>Copyright @ The Odin Project 2023</div>
         </div>
     </div>
     <script src="./script.js"></script>
