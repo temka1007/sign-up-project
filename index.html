@@ -6,10 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./CSS/normalize.css">
     <link rel="stylesheet" href="./CSS/stylesheet.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Inter:wght@500&family=Rubik+Bubbles&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Inter:wght@500&family=Montserrat:wght@100;200&family=Rubik+Bubbles&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500&family=Rubik+Bubbles&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500&family=Montserrat:wght@100;200&family=Rubik+Bubbles&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;500&display=swap" rel="stylesheet">
     <title>WALLACE/Sign Up</title>
 </head>
 <body>
@@ -32,30 +39,30 @@
                 <p class="warning">This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams. <br> Sign up now to get started.</p>
             </div>
             <div class="sign-up">
-                <h1>Create Account</h1>
+                <h1>CREATE ACCOUNT</h1>
             </div>
             <form action="get">
-                <div>
+                <div class="inside-form">
                     <label for="user_name">Your Name</label>
                     <input type="text" name="user_name" id="user_name" required>
                 </div>
-                <div>
+                <div class="inside-form">
                     <label for="user_email">Email</label>
-                    <input type="email" name="user_email" id="user_email">
+                    <input type="email" name="user_email" id="user_email" required>
                 </div>
-                <div>
+                <div class="inside-form">
                     <label for="password">Password</label>
-                    <input type="password" name="password" id="password">
+                    <input type="password" name="password" id="password" required>
                 </div>
-                <div>
-                    <label for="confirmation_password">Confirm Password</label>
-                    <input type="password" name="confirm-password" id="confirmation_password">
+                <div class="inside-form">
+                    <label for="confirmation_password">Re-enter password</label>
+                    <input type="password" name="confirm-password" id="confirmation_password" required>
                 </div>
-                <div>
-                    <button type="submit">Sign Up</button>
+                <div class="button-div">
+                    <button type="submit">SIGN UP</button>
                 </div>
             </form>
-            <p class="log-in">Already have an account?<a href="">Log in</a></p>
+            <p class="log-in">Already have an account?<a href="https://www.google.com/"> Log in</a></p>
             <div class="copyright">
                 <div>Copyright @ The Odin Project 2023</div>
             </div>
