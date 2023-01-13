@@ -119,14 +119,14 @@ button:hover {
     height: 100px;
     background-color: var(--main-logo-color);
     border-radius: var(--main-logo-border-radius);
-    box-shadow: rgba(9, 9, 15, 0.5) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+    box-shadow: rgba(0, 0, 0, 0.45) 2px 2px 4px;
 }
 .short {
     height: 80%;
     width: var(--main-logo-width);
     border-radius: var(--main-logo-border-radius);
     background-color: var(--main-logo-color);
-    box-shadow: rgba(18, 18, 34, 0.5) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+    box-shadow: rgba(0, 0, 0, 0.45) 2px 2px 4px;
 }
 .wallace > p {
     font-size: 30px;
