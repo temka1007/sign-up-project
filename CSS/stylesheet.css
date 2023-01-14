@@ -9,25 +9,24 @@
     --main-logo-width: 14px;
     --main-logo-border-radius: calc(var(--main-logo-width)/2);
     --main-font-color: #868a75;
+    --main-width-of-form: 400px;
 }
 
 /*base layouts, background-image*/
 
 body {
     display: flex;
-    flex-direction: row;
+    flex-direction: row-reverse;
     background-image: url(../Images/models.png);
     background-repeat: no-repeat;
     background-size: cover;
-}
-body > div {
-    width: 50vw;
-    height: 100vh;
 }
 
 /* form container */
 
 .form.container {
+    width: max(50vw, 500px);
+    height: 100vh;
     backdrop-filter: blur(15px);
     display: flex;
     justify-content: center;
@@ -44,7 +43,7 @@ form {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    width: 400px;
+    width: var(--main-width-of-form);
 }
 
 /* Warning box*/
@@ -124,7 +123,7 @@ button:hover {
 }
 form > div > label, input {
     display: flex;
-    width: 390px;
+    width: calc(var(--main-width-of-form) - 10px);
 
 }
 .inside-form {
@@ -154,14 +153,18 @@ a {
     letter-spacing: -1px;
 }   
 
-/* logo */
+/* logo */  
 
 .logo-container {
+    position: absolute;
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-right: calc(75vw - 90px);
+    bottom: 5%;
 }
 .logo {
+    
     position: relative;
     height: 100px;
     width: 80px;
@@ -169,12 +172,6 @@ a {
     justify-content: space-around;
     align-items: flex-end;
     padding: 10px;
-}
-.left-side {
-    display: flex;
-    justify-content: center;
-    align-items: flex-end;
-    padding: 50px;
 }
 .tall {
     width: var(--main-logo-width);
