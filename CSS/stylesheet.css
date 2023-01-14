@@ -2,12 +2,11 @@
 
 * {
     box-sizing: border-box;
-    
 }
 :root {
     --main-font-size: 16px;
     --main-logo-color: rgb(236, 136, 4);
-    --main-logo-width: 13px;
+    --main-logo-width: 14px;
     --main-logo-border-radius: calc(var(--main-logo-width)/2);
     --main-font-color: #868a75;
 }
@@ -164,7 +163,7 @@ a {
 }
 .logo {
     position: relative;
-    height: 120px;
+    height: 100px;
     width: 80px;
     display: flex;
     justify-content: space-around;
@@ -179,27 +178,40 @@ a {
 }
 .tall {
     width: var(--main-logo-width);
-    height: 100px;
+    height: 80px;
     background-color: var(--main-logo-color);
     border-radius: var(--main-logo-border-radius);
     box-shadow: rgba(0, 0, 0, 0.45) 2px 2px 4px;
 }
 .short {
-    height: 80%;
+    height: 77%;
     width: var(--main-logo-width);
     border-radius: var(--main-logo-border-radius);
     background-color: var(--main-logo-color);
     box-shadow: rgba(0, 0, 0, 0.45) 2px 2px 4px;
 }
-.wallace > p {
+.wallace {
     font-size: 30px;
     color: var(--main-logo-color);
-    font-family: 'Inter', sans-serif;   
-    letter-spacing: 5px;
+    font-family: 'Exo 2', sans-serif;
+    letter-spacing: 10px;
     font-weight: bold;
     text-shadow: 2px 4px 3px rgba(0,0,0,0.3);
+    display: flex;
+    align-items: center;
+    height: 25px;
 }
-
+.corporation {
+    font-family: 'Exo 2', sans-serif;
+    color: var(--main-logo-color);
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    display: flex;
+    align-items: center;
+    height: 18px;
+    text-shadow: 2px 4px 3px rgba(0,0,0,0.3);
+}
 /*copyright*/
 
 .copyright {
