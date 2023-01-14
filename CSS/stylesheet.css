@@ -1,3 +1,5 @@
+/*Root*/
+
 * {
     box-sizing: border-box;
     
@@ -9,6 +11,9 @@
     --main-logo-border-radius: calc(var(--main-logo-width)/2);
     --main-font-color: #868a75;
 }
+
+/*base layouts, background-image*/
+
 body {
     display: flex;
     flex-direction: row;
@@ -20,11 +25,13 @@ body > div {
     width: 50vw;
     height: 100vh;
 }
+
+/* form container */
+
 .form.container {
     backdrop-filter: blur(15px);
     display: flex;
     justify-content: center;
-    
 }
 form {
     position: relative;
@@ -39,7 +46,43 @@ form {
     align-items: center;
     flex-direction: column;
     width: 400px;
+}
 
+/* Warning box*/
+
+.warning-container {
+    border: 1px solid gray;
+    border-left: 4px solid rgb(175, 149, 0);
+    padding: 15px;
+    border-radius: 5px;
+    background-color: rgba(24, 24, 24, 0.5);
+    font-size: 20px;
+    font-family: 'VT323', monospace;
+    line-height: 17px;
+    display: flex;
+}
+.warning {
+    color: var(--main-font-color);
+}
+.material-symbols-outlined {
+    margin-right: 15px;
+    color: rgb(175, 149, 0);
+    display: flex;
+    align-self: center;
+}
+
+/* Form */
+
+h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    color: var(--main-font-color);
+    letter-spacing: 4px;
+}
+label {
+    font-family: 'Source Sans Pro', sans-serif;;
+    color: #868a75;
+    font-size: 17px;
 }
 button, 
 input {
@@ -56,18 +99,11 @@ input {
 form > div {
     display: flex;
     flex-direction: column;
-
-    
 }
 .button-div {
     border: none;
     display: flex;
     align-items: center;
-}
-form > div > label, input {
-    display: flex;
-    width: 390px;
-
 }
 button {
     width: 170px;
@@ -87,12 +123,39 @@ button:hover {
     color: #a1a58e;
     border-color: #a1a58e;
 }
+form > div > label, input {
+    display: flex;
+    width: 390px;
+
+}
+.inside-form {
+    border-bottom: 4px solid var(--main-font-color);
+    border-radius: 1px 3px 1px 3px;
+    margin-top: 20px;
+    padding: 5px 5px 0px 5px;
+}
+input {
+    font-family: 'Source Sans Pro', sans-serif;;
+}
+input:focus {
+    outline: none;
+}
+
+/* log in */
+
 .log-in {
     margin-top: 20px;
     font-family: 'Montserrat', sans-serif;
     color: #868a75;
     letter-spacing: -1px;
 }
+a {
+    font-family: 'Montserrat', sans-serif;
+    color: var(--main-logo-color);
+    letter-spacing: -1px;
+}   
+
+/* logo */
 
 .logo-container {
     display: flex;
@@ -136,33 +199,8 @@ button:hover {
     font-weight: bold;
     text-shadow: 2px 4px 3px rgba(0,0,0,0.3);
 }
-.warning-container {
-    border: 1px solid gray;
-    border-left: 4px solid rgb(175, 149, 0);
-    padding: 15px;
-    border-radius: 5px;
-    background-color: rgba(24, 24, 24, 0.5);
-    font-size: 20px;
-    font-family: 'VT323', monospace;
-    line-height: 17px;
-    display: flex;
 
-}
-.warning {
-    color: var(--main-font-color);
-}
-.material-symbols-outlined {
-    margin-right: 15px;
-    color: rgb(175, 149, 0);
-    display: flex;
-    align-self: center;
-}
-h1 {
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 400;
-    color: var(--main-font-color);
-    letter-spacing: 4px;
-}
+/*copyright*/
 
 .copyright {
     position: absolute;
@@ -172,26 +210,4 @@ h1 {
     font-family: Arial, Helvetica, sans-serif;
     color: #1e1f1d;
     font-size: 12px;
-}
-.inside-form {
-    border-bottom: 4px solid var(--main-font-color);
-    border-radius: 1px 3px 1px 3px;
-    margin-top: 20px;
-    padding: 5px 5px 0px 5px;
-}
-a {
-    font-family: 'Montserrat', sans-serif;
-    color: var(--main-logo-color);
-    letter-spacing: -1px;
-}   
-label {
-    font-family: 'Source Sans Pro', sans-serif;;
-    color: #868a75;
-    font-size: 17px;
-}
-input {
-    font-family: 'Source Sans Pro', sans-serif;;
-}
-input:focus {
-    outline: none;
 }
