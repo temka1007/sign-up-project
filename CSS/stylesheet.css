@@ -111,7 +111,7 @@ button {
     font-weight: bold;
     color: var(--main-font-color);
     font-size: 23px;
-    padding: 5px;
+    padding: 7px 5px 5px 5px;
     cursor: pointer;
     border-radius: 5px;
     margin-top: 30px;
@@ -128,7 +128,7 @@ form > div > label, input {
 }
 .inside-form {
     border-bottom: 4px solid var(--main-font-color);
-    border-radius: 1px 3px 1px 3px;
+    border-radius: 1px 4px 1px 3px;
     margin-top: 20px;
     padding: 5px 5px 0px 5px;
 }
